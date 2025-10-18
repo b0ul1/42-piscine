@@ -4,9 +4,20 @@ void	ft_putstr(char *str)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while(str[i] != '\0')
 	{
 		write(1, &str[i], 1);
 		i++;
 	}
 }
+
+int	main(void)
+{
+	ft_putstr("Bonjour");
+	ft_putstr("\n");
+	ft_putstr("42 mec sympa");
+	ft_putstr("\n");
+	ft_putstr("manges des pates\n");
+	return 0;
+}
+
